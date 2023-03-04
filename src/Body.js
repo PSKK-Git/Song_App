@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import './Body.css';
 
 function Body() {
   return (
-    <div>
-        helo im body
+    <div className='body'>
+        <h1>
+            hello im body
+        </h1>
     </div>
   )
 }

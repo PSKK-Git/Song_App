@@ -20,8 +20,15 @@ function App() {
     const _token = hash.access_token;
 
     if (_token) {
-      setToken(_token)
+      setToken(_token);
       s.setAccessToken(_token);
+
+      dispatch({
+        type:"SET TOKEN",
+        token:_token,
+      });
+      
+      
 
       s.getMe().then((user) => {
         dispatch({
@@ -45,8 +52,9 @@ function App() {
     <div className="app">
       {
         token ? 
-        <Player/>
-        : <Login/>}</div>
+        <Player spotify={s}/>
+        : <Login/>}
+    </div>
   );
 }
 

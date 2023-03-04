@@ -1,11 +1,20 @@
-import React from 'react'
+import React from "react";
+import "./Player.css";
+import Sidebar from "./Sidebar";
+import Body from "./Body";
 
-function Player() {
+function Player({ spotify }) {
   return (
-    <div>
-        <h1>welcome to spotify</h1>
+    <div className="player">
+      <div className="player__body">
+        <Sidebar/>
+        
+        <Body/>
+        
+      </div>
+      
     </div>
-  )
+  );
 }
 
-export default Player
+export default Player;

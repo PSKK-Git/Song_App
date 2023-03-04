@@ -1,4 +1,3 @@
-import { findAllByDisplayValue } from "@testing-library/react";
 
 export const initialState = {
   user: null,
@@ -8,8 +7,7 @@ export const initialState = {
   top_artists: null,
   playing: false,
   item: null,
-  token: 
-  "BQDk1Xxm4vV8ae7fQ8JeO9cmi4Ws7n3JPmiITCwwgXYAmtM2UdPTxq_gyZhXmHZQuMM57D_4FYV6nWZA_US9FQ1otj1QycbiwQbK5fRXUvkq_Qk-vh0k3q3xCViGoHdwiSsdND-xzFx9wptXckHc1_3uJrjiiZOnhB7xPDwbNTcfRSwXOSpkx8Gpsm4q_7nk-iZV4k2zFM63znS2HRSHEA",
+  token: "BQAv3ZzG1Bq44NL1jZk_rAACY9X7khZAj_ZsHnewPbXU1eSzHHK5kkY0RFkJMtRChU0TFJIofSv50U_LROs7bAP7cyqjGwEZ8jmiDfJ_vpQ1MUGBEIgX4VDVNNWT7464mYW8P-poNOfR6xk7cO3V56fOgMDZEui5WDYTOTRcYFFBSSyVb5IJxh7yzGF1hICjWX7V6UtZrQCbUJDq_Hxpcg",
 };
 
 const reducer = (state, action) => {
@@ -30,6 +28,6 @@ const reducer = (state, action) => {
 
     default:
       return state;
-      };
+      } 
     }
 export default reducer ;

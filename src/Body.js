@@ -1,12 +1,19 @@
-import React from 'react';
-import './Body.css';
+import React from "react";
+import "./Body.css";
+import Header from "./Header";
+import LyricsIcon from '@mui/icons-material/Lyrics';
 
-function Body() {
+import PlayCircleFilledWhiteIcon from '@mui/icons-material/PlayCircleFilledWhite';
+
+import FavoriteIcon from '@mui/icons-material/Favorite';
+
+import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+
+function Body({ spotify }) {
   return (
-    <div className='body'>
-        <h1>
-            hello im body
-        </h1>
+    <div className="body">
+      <Header spotify={spotify} />
+      
     </div>
   )
 }

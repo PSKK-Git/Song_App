@@ -40,12 +40,18 @@ function App() {
       s.getMe().then((user) => {
         console.log("im heeeeheheh",user);
         });   
+
+        s.getUserPlaylists().then((playlists) => {
+          dispatch({
+            type: "SET_PLAYLISTS",
+            playlists,
+          });
+        });
     }
-    console.log("I HAVE TOKEN", token);
+    
   }, []);
 
-  console.log("😀",user);
-  console.log("🤡", token);
+
 
 
   return (
